@@ -1,0 +1,26 @@
+{
+  "name": "shared-logic",
+  "version": "0.0.1",
+  "description": "> TODO: description",
+  "author": "Jaime Sarrion <jaime.sarrion@gmail.com>",
+  "homepage": "https://github.com/JaimeSarrion/e-commerce#readme",
+  "license": "ISC",
+  "main": "lib/shared-logic.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JaimeSarrion/e-commerce.git"
+  },
+  "scripts": {
+    "test": "node ./__tests__/shared-logic.test.js"
+  },
+  "bugs": {
+    "url": "https://github.com/JaimeSarrion/e-commerce/issues"
+  }
+}
