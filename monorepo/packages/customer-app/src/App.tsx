@@ -1,31 +1,29 @@
-import React from "react";
-import logo from "./logo.svg";
+import { useState, useEffect } from "react";
 import "./App.css";
 import { getAllProducts } from "@finand-edi/shared-logic";
+import ProductLists from "./components/product-list/product-list";
 
 function App() {
-  console.log(get());
+  const [items, setItems] = useState([]);
 
-  async function get() {
+  useEffect(() => {
+    getAllItems();
+  }, []);
+
+  async function getAllItems() {
     const products = await getAllProducts();
-    console.log(products);
+    if (products) {
+      setItems(products);
+    }
   }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header>
+        <h1>Nombre de la empresa</h1>
       </header>
+      <div>
+        <ProductLists items={items} />
+      </div>
     </div>
   );
 }
