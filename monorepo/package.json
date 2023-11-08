@@ -4,7 +4,12 @@
   "workspaces": [
     "packages/*"
   ],
-  "dependencies": {},
+  "dependencies": {
+    "-": "^0.0.1",
+    "@types/node": "^20.9.0",
+    "save-dev": "^0.0.1-security",
+    "typescript": "^5.2.2"
+  },
   "devDependencies": {
     "lerna": "^7.4.2"
   }

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { getAllProducts, getCategories } from "@finand-edi/shared-logic";
+import { getProductsByCategory, getAllProducts, getCategories } from "@finand-edi/shared";
 import {
   capitalizeFirstLetterInArray,
   sortItemsByPrice,
@@ -41,10 +41,7 @@ const useHome = () => {
 
   async function getByCategory(category: string) {
     try {
-      const response = await fetch(
-        `https://fakestoreapi.com/products/category/${category}`
-      );
-      const products = await response.json();
+      const products = await getProductsByCategory(category)
       const newOrder = sortItemsByPrice(products, isAscending);
       setItems(newOrder);
     } catch (error) {

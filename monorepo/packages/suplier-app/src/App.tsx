@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { getAllProducts } from "@finand-edi/shared-logic";
+import { getAllProducts } from "@finand-edi/shared";
 import "./App.css";
 import ProductTable from "./components/products-table/products-table";
 import { Item } from "./types/Items";
