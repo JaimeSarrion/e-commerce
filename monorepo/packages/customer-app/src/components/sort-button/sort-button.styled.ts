@@ -9,12 +9,14 @@ export const Container = styled.div`
 export const SortButton = styled.button`
   background: none;
   border: none;
-  font-size: 16px;
+  font-size: 18px;
   outline: none;
   cursor: pointer;
+  font-family: Avenir-Heavy;
+  font-weight: 800;
 `;
 
 export const SortArrow = styled.span`
-  font-size: 12px;
+  font-size: 20px;
   margin-left: 4px;
 `;
