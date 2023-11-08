@@ -16,8 +16,15 @@ export const Table = styled.table`
   tr:hover {
     background-color: #f5f5f5;
   }
+
   .title {
-    background-color: aliceblue;
+    display: flex;
+    flex-grow: 1;
+  }
+
+  .category, .price {
+    flex-shrink: 0;
+    width: 200px;
   }
 `;
 
