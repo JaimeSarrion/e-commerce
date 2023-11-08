@@ -12,5 +12,9 @@
   },
   "devDependencies": {
     "lerna": "^7.4.2"
+  },
+  "scripts": {
+    "customer": "cd packages/customer-app && npm run start",
+    "suplier": "cd packages/suplier-app && npm run start"
   }
 }
