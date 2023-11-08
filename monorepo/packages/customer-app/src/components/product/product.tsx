@@ -9,9 +9,10 @@ interface IProps {
 const Product: React.FC<IProps> = ({ item }) => {
   return (
     <Styled.Container className="container" key={item.id}>
-      <img src={item.image} alt={item.title} width="100" height="100" />
+      <img src={item.image} alt={item.title} width="150" height="150" />
       <p>{item.title}</p>
       <h2 className="price">{item.price}€</h2>
+      <button className="add-to-cart-button">Add to Cart</button>
     </Styled.Container>
   );
 };
