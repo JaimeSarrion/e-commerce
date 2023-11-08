@@ -6,12 +6,13 @@ export const Container = styled.div`
     justify-content: center;
     align-items: center;
     width: 100%;
+    border-bottom: 1px solid #000;
+    padding-bottom: 16px;
 `;
 
 export const Category = styled.div`
     display: flex;
     flex-direction: column;
-    letter-spacing: -.5px;
     padding: 0 8px;
     font-size: 18px;
     color: #000;
