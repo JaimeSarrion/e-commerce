@@ -34,8 +34,8 @@ For this initial MVP version, we do not have a prototype due to our designer bei
 
 ## Getting Started
 1. Clone this repository.
-2. Install dependencies using `npm install` in each application's folder.
-3. Run `npm start` to start the application in development mode.
+2. Install dependencies using `npm install` the root folder
+3. Run `npm run customer` and `npm run suplier` to start the application in development mode.
 
 ## Contributions
 We welcome contributions and suggestions to improve this project. If you wish to collaborate, please open an issue or submit a Pull Request.
@@ -80,9 +80,9 @@ Desde el departamento de IT de Gedesco, nos hemos aventurado en el sector de e-c
 Para esta primera versión del MVP, no contamos con un prototipo debido a la ausencia de nuestro diseñador. Sin embargo, nuestro objetivo es crear un diseño básico y minimalista que ofrezca una experiencia agradable al usuario.
 
 ## Inicio Rápido
-1. Clona este repositorio.
-2. Instala las dependencias utilizando `npm install` en la carpeta de cada aplicación.
-3. Ejecuta `npm start` para iniciar la aplicación en modo de desarrollo.
+1. Clone este repositorio.
+2. Instala las dependencias usando `npm install` en la carpeta raíz.
+3. Ejecuta `npm run customer` y `npm run suplier` para iniciar la aplicación en modo desarrollo.
 
 ## Contribuciones
 Agradecemos las contribuciones y sugerencias para mejorar este proyecto. Si deseas colaborar, por favor, abre un issue o envía una solicitud de extracción (Pull Request).
